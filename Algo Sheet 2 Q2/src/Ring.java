@@ -1,0 +1,15 @@
+import java.util.Collection;
+import java.util.Iterator;
+
+
+
+public interface Ring<E> extends Collection<E> {
+	
+	public boolean add(E e);
+
+    public E get(int index) throws IndexOutOfBoundsException;
+
+    public Iterator<E> iterator();
+
+    public int size();
+}
